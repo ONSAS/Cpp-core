@@ -1,5 +1,6 @@
-# ONSAS++: a C++ implementation of the [ONSAS](https://github.com/ONSAS/ONSAS) structural analysis solver
-------
+# C++-core
+
+This repo contains a C++ implementation of the [ONSAS](https://github.com/ONSAS/ONSAS) core procedures and functions using the [Armadillo library](https://arma.sourceforge.net/). 
 
 ## How to compile the code in Ubuntu
 
