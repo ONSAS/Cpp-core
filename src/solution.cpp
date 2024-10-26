@@ -8,7 +8,7 @@ Solution::Solution(){
 };
 
 Solution::Solution(double t, vec U){
-    time =t;
+    float time = t;
     vec disps=U;
 };
 
