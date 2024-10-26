@@ -1,0 +1,14 @@
+name: armadillo_tests
+
+on: push 
+
+jobs:
+  cpp-helloworld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build docker images
+        run: sudo apt-get update && sudo apt-get install build-essential cmake libopenblas-dev liblapack-dev libarpack2 libarmadillo-dev
+      - name: compile armadillo example
+        run: |
+          cd armadilloTest && g++ example.cpp -o example.lnx -O2 -larmadillo && ./example.lnx > output.txt
